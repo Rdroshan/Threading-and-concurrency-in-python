@@ -8,7 +8,9 @@
 # and more than two operations are thread-unsafe.
 # Solution: We need mutex lock.
 # This similar concept can be applied to other built-in types.
-# Also 
+# like list, set.
+# Also in other languages like Go, Java these operations are
+# not atomic and hence lock is required.
 
 from threading import Thread, Lock
 
